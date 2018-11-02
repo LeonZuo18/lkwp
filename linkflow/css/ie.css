@@ -1,0 +1,180 @@
+/*
+Styles for older IE versions (previous to IE9).
+*/
+.ie7 .main-navigation li a,
+.ie7 .main-navigation li {
+	display: inline;
+}
+.ie7 #header_sub ul li {
+	display: inline;
+}
+.ie7 footer .foot-menu li{
+	display: inline;
+}
+.assistive-text,
+.site .screen-reader-text {
+	clip: rect(1px 1px 1px 1px); /* IE7 */
+}
+h1.site-title { display:inline;} /*IE6 float causes double margin-left*/
+footer#colophon {
+	clear: both;
+	font-size: 12px;
+	line-height: 22px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 24px 0;
+	border-top:6px solid #ece2c9;
+	background-color:#494e58;
+	color:#9A9Ea5;
+}
+footer#colophon a {
+	color: #686868;
+}
+footer#colophon a:hover {
+	color: #21759b;
+}
+footer#colophon .site-content { padding: 15px 20px; width:930px;}
+
+
+/* =RTL overrides for IE7 and IE8
+-------------------------------------------------------------- */
+.rtl .site-header h1,
+.rtl .site-header h2 {
+	text-align: right;
+}
+.rtl .widget-area,
+.rtl .author-description {
+	float: left;
+}
+.rtl .author-avatar,
+.rtl .site-content {
+	float: right;
+}
+.rtl .main-navigation ul.nav-menu,
+.rtl .main-navigation div.nav-menu > ul {
+	text-align: right;
+}
+.rtl .main-navigation ul li ul li,
+.rtl .main-navigation ul li ul li ul li {
+	margin-left: 40px;
+	margin-right: auto;
+}
+.rtl .main-navigation li ul ul {
+	position: absolute;
+	bottom: 0;
+	right: 100%;
+	z-index: 1;
+}
+.ie7 .rtl .main-navigation li ul ul {
+	position: absolute;
+	bottom: 0;
+	right: 100%;
+	z-index: 1;
+}
+.ie7 .rtl .main-navigation ul li {
+	z-index: 99;
+}
+.ie7 .rtl .main-navigation li ul {
+	position: absolute;
+	bottom: 100%;
+	right: 0;
+	z-index: 1;
+}
+.ie7 .rtl .main-navigation li {
+	margin-right: auto;
+	margin-left: 40px;
+}
+.ie7 .rtl .main-navigation li ul ul ul {
+	position: relative;
+	z-index: 1;
+}
+
+
+.vjs-default-skin.vjs-paused .vjs-play-control div {
+width:15px;
+height:17px;
+background:url('video-js.png');
+margin:.5em auto 0
+}
+.vjs-default-skin.vjs-playing .vjs-play-control div {
+width:15px;
+height:17px;
+background:url('video-js.png') -25px 0;
+margin:.5em auto 0
+}
+.vjs-default-skin .vjs-rewind-control div {
+width:19px;
+height:16px;
+background:url('video-js.png');
+margin:.5em auto 0
+}
+.vjs-default-skin .vjs-mute-control div {
+width:22px;
+height:16px;
+background:url('video-js.png') -75px -25px;
+margin:.5em auto 0
+}
+.vjs-default-skin .vjs-mute-control.vjs-vol-0 div {
+background:url('video-js.png') 0 -25px
+}
+.vjs-default-skin .vjs-mute-control.vjs-vol-1 div {
+background:url('video-js.png') -25px -25px
+}
+.vjs-default-skin .vjs-mute-control.vjs-vol-2 div {
+background:url('video-js.png') -50px -25px
+}
+.vjs-default-skin div.vjs-seek-handle {
+position:absolute;
+width:16px;
+height:16px;
+margin-top:-0.3em;
+left:0;
+top:0;
+background:url('video-js.png') 0 -50px;
+}
+.vjs-default-skin .vjs-fullscreen-control div {
+width:16px;
+height:16px;
+background:url('video-js.png') -50px 0;
+margin:.5em auto 0
+}
+.vjs-default-skin.vjs-fullscreen .vjs-fullscreen-control div {
+background:url('video-js.png') -75px 0
+}
+.vjs-default-skin .vjs-big-play-button {
+display:block;
+z-index:2;
+position:absolute;
+top:50%;
+left:50%;
+width:8.0em;
+height:8.0em;
+margin:-42px 0 0 -42px;
+text-align:center;
+vertical-align:center;
+cursor:pointer!important;
+border:.2em solid #fff;
+background:#454545;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#454545', endColorstr='#3f3f3f', GradientType=0);
+}
+.vjs-default-skin div.vjs-big-play-button span {
+position:absolute;
+top:50%;
+left:50%;
+display:block;
+width:35px;
+height:42px;
+margin:-20px 0 0 -15px;
+background:url('video-js.png') -100px 0
+}
+.vjs-default-skin .vjs-menu-button div {
+background:url('video-js.png') 0 -75px no-repeat;
+width:16px;
+height:16px;
+margin:.2em auto 0;
+padding:0
+}
+.vjs-default-skin .vjs-menu-button ul li.vjs-selected {
+text-decoration:underline;
+background:url('video-js.png') -125px -50px no-repeat
+}
